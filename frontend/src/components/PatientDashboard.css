@@ -1,0 +1,137 @@
+.pat-dash-container {
+  max-width: 1200px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 40px 20px;
+}
+
+.pat-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  margin-bottom: 40px;
+  text-align: left;
+}
+
+.emerald-text { color: #10b981; }
+
+.pat-id-badge {
+  background: rgba(16, 185, 129, 0.1);
+  color: #10b981;
+  padding: 6px 14px;
+  border-radius: 99px;
+  font-weight: 800;
+  font-size: 0.9rem;
+  margin-top: 10px;
+  display: inline-block;
+  border: 1px solid rgba(16, 185, 129, 0.3);
+}
+
+.pat-security {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  color: #64748b;
+  font-size: 0.85rem;
+}
+
+/* Bento Grid */
+.pat-bento-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+}
+
+.pat-bento-item {
+  background: white;
+  border: 1px solid #e2e8f0;
+  border-radius: 24px;
+  padding: 30px;
+  text-align: left;
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05);
+}
+
+.full-width { grid-column: 1 / -1; }
+
+.card-label {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  color: #94a3b8;
+  font-size: 0.8rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  margin-bottom: 15px;
+}
+
+/* History Table */
+.pat-table-wrapper {
+  overflow-x: auto;
+  margin-top: 10px;
+}
+
+.pat-history-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.pat-history-table th {
+  text-align: left;
+  padding: 15px;
+  color: #64748b;
+  font-size: 0.85rem;
+  border-bottom: 2px solid #f1f5f9;
+}
+
+.pat-history-table td {
+  padding: 20px 15px;
+  border-bottom: 1px solid #f1f5f9;
+  font-size: 0.95rem;
+  color: #1e293b;
+}
+
+.doc-tag {
+  background: #f1f5f9;
+  padding: 4px 10px;
+  border-radius: 6px;
+  font-weight: 600;
+  font-size: 0.8rem;
+}
+
+.empty-state {
+  padding: 60px;
+  text-align: center;
+  color: #94a3b8;
+}
+
+@media (max-width: 768px) {
+  .pat-bento-grid { grid-template-columns: 1fr; }
+}
+
+/* Add these to your existing CSS file */
+
+.pat-history-table tr:hover {
+  background-color: #f8fafc;
+}
+
+.doc-tag {
+  background: #ecfdf5; /* Emerald 50 */
+  color: #065f46;    /* Emerald 800 */
+  padding: 4px 10px;
+  border-radius: 6px;
+  font-weight: 700;
+  font-size: 0.8rem;
+}
+
+.linked-msg {
+  color: #10b981;
+  font-size: 0.8rem;
+  font-weight: 700;
+  margin-top: 5px;
+}
+
+/* Ensure the table doesn't feel cramped on smaller laptops */
+.pat-table-wrapper {
+  border-radius: 12px;
+  border: 1px solid #f1f5f9;
+}

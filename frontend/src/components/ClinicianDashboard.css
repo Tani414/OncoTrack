@@ -1,0 +1,102 @@
+.dash-container { background: #f8fafc; min-height: 100vh; color: #1e293b; }
+
+/* Header */
+.dash-nav {
+  display: flex; justify-content: space-between; align-items: center;
+  padding: 15px 40px; background: #fff; border-bottom: 1px solid #e2e8f0;
+}
+.nav-brand { display: flex; align-items: center; gap: 10px; }
+.emerald-text { color: #10b981; }
+.role-tag { font-size: 0.7rem; background: #f1f5f9; padding: 2px 8px; border-radius: 4px; color: #64748b; }
+.nav-user { display: flex; align-items: center; gap: 20px; }
+.user-info { text-align: right; line-height: 1.2; }
+.user-info span { font-size: 0.8rem; color: #10b981; font-weight: 700; }
+
+/* Content Layout */
+.dash-content { max-width: 1200px; margin: 0 auto; padding: 40px 20px; }
+.action-row { display: flex; justify-content: space-between; align-items: flex-end; margin-bottom: 30px; }
+.btn-primary {
+  background: #10b981; color: white; padding: 12px 24px; border-radius: 12px;
+  text-decoration: none; display: flex; align-items: center; gap: 8px; font-weight: 700; transition: 0.2s;
+}
+.btn-primary:hover { background: #059669; }
+
+/* Bento Grid */
+.bento-grid { display: grid; grid-template-columns: 2fr 1fr; gap: 20px; }
+.bento-card { background: #fff; border: 1px solid #e2e8f0; border-radius: 20px; padding: 25px; box-shadow: 0 4px 6px -1px rgba(0,0,0,0.05); }
+.full-width { grid-column: span 2; }
+
+.card-header { display: flex; align-items: center; gap: 10px; margin-bottom: 20px; color: #64748b; }
+.card-header h3 { font-size: 1rem; color: #1e293b; }
+
+.chart-wrapper { height: 250px; }
+
+/* Table Styling */
+.dash-search-input {
+  width: 100%; padding: 12px; border: 2px solid #f1f5f9; border-radius: 10px; margin-bottom: 20px;
+}
+.dash-table { width: 100%; border-collapse: collapse; text-align: left; }
+.dash-table th { padding: 15px; border-bottom: 2px solid #f1f5f9; color: #64748b; font-size: 0.85rem; }
+.dash-table td { padding: 15px; border-bottom: 1px solid #f1f5f9; font-size: 0.95rem; }
+
+.pat-id-badge { background: #ecfdf5; color: #059669; padding: 4px 10px; border-radius: 6px; font-weight: 800; font-size: 0.8rem; }
+.role-label { text-transform: capitalize; color: #64748b; font-size: 0.85rem; }
+.action-link { color: #10b981; text-decoration: none; font-weight: 700; }
+.empty-row { text-align: center; padding: 40px; color: #94a3b8; }
+
+.doc-id-display {
+  font-family: monospace;
+  font-size: 0.75rem;
+  color: #059669;
+  display: block;
+}
+
+.id-cell {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.mongo-id-text {
+  background: #f1f5f9;
+  padding: 4px 8px;
+  border-radius: 6px;
+  font-size: 0.8rem;
+  color: #475569;
+  font-family: 'Courier New', Courier, monospace;
+}
+
+.copy-icon-btn {
+  background: none;
+  border: none;
+  cursor: pointer;
+  color: #94a3b8;
+  padding: 4px;
+  display: flex;
+  align-items: center;
+  transition: color 0.2s;
+}
+
+.copy-icon-btn:hover {
+  color: #10b981;
+}
+
+.search-hint {
+  font-size: 0.8rem;
+  color: #94a3b8;
+  margin-bottom: 10px;
+}
+
+.table-responsive {
+  overflow-x: auto;
+}
+
+.empty-state-text {
+  text-align: center;
+  padding: 40px;
+  color: #94a3b8;
+  font-style: italic;
+}
+
+@media (max-width: 900px) { .bento-grid { grid-template-columns: 1fr; } .full-width { grid-column: span 1; } }
+
