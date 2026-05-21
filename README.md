@@ -27,6 +27,20 @@ OncoTrack is a secure, full-stack medical record management system designed to d
 
 ---
 
+## 📸 Screenshots
+
+### 🔐 Secure Role-Based Authentication
+![Login Screen](screenshots/login.png)
+
+### 🖥️ Clinician Dashboard (Patient Records & CRUD Operations)
+![Clinician Dashboard](screenshots/dashboard.png)
+
+### 📊 Visual Analytics Engine (Data Insights via Recharts)
+![Analytics Dashboard](screenshots/analytics.png)
+
+### 🩺 Patient Access Portal (Read-Only Medical Logs)
+![Patient Portal](screenshots/patient-view.png)
+
 ## 📁 Repository Structure
 
 ```text
