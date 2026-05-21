@@ -27,21 +27,34 @@ OncoTrack is a secure, full-stack medical record management system designed to d
 
 ---
 
-## 📸 Screenshots
+## 📸 App Interface Walkthrough
 
-### 🔐 Secure Role-Based Authentication
-![Login Screen](screenshots/login.png)
+### 🏠 1. Landing Portal & Onboarding
+An intuitive entry point built with a clean aesthetic to ease patient anxiety and offer instant navigation paths.
+![OncoTrack Home](screenshots/home.jpg)
 
-### 🖥️ Clinician Dashboard (Patient Records & CRUD Operations)
-![Clinician Dashboard](screenshots/dashboard.png)
+### 🔐 2. Dual-Role Authentication & Secure Registration
+Separate validation portals for healthcare providers and patients, utilizing structured data input validation.
+| Secure Login Portal | Account Creation View |
+| :---: | :---: |
+| ![Login](screenshots/login.jpg) | ![Registration](screenshots/register1.jpg) |
 
-### 📊 Visual Analytics Engine (Data Insights via Recharts)
-![Analytics Dashboard](screenshots/analytics.png)
+*Full registration details captured securely:*
+![Registration Part 2](screenshots/screenshots/register2.jpg)
 
-### 🩺 Patient Access Portal (Read-Only Medical Logs)
-![Patient Portal](screenshots/patient-view.png)
+### 👨‍⚕️ 3. Clinician Dashboard & Real-Time Analytics
+Authorized clinicians gain immediate operational oversight with automated data visualization for stages and patient statuses via interactive charts.
+![Clinician Overview](screenshots/clinician-dash1.jpg)
+![Dynamic Records List](screenshots/clinician-dash2.jpg)
 
-## 📁 Repository Structure
+### 📝 4. Clinical CRUD Operations (Patient Intake & Logs)
+A dynamic, split-form management modal allowing clinicians to seamlessly provision unique Patient IDs, map diagnoses, configure treatment strategies, and log vital updates.
+![Patient Entry Top](screenshots/patient-entry1.jpg)
+![Patient Entry Bottom](screenshots/patient-entry2.jpg)
+
+### 🩺 5. Patient Access Portal
+A clean, read-only dashboard layout explicitly engineered for individual patients to safely review their verified diagnoses, track upcoming appointment timelines, and monitor daily prescription frequency.
+![Patient Portal View](screenshots/patient-portal.jpg)
 
 ```text
 OncoTrack/
